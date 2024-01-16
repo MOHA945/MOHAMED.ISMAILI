@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LES BESOINS FONDAMENTAUX </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0; /* Couleur de fond, à personnaliser */
+        }
+
+        .header {
+            background-color: red; /* Couleur de la bande rouge, à personnaliser */
+            color: white; /* Couleur du texte blanc, à personnaliser */
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .slide {
+            margin-top: 20px;
+            /* Ajoutez d'autres styles pour vos diapositives si nécessaire */
+        }
+
+        .names-bar {
+            background-color: #3498db; /* Couleur de la bande BLEU, à personnaliser */
+            color: white; /* Couleur du texte blanc, à personnaliser */
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        .table-header {
+            background-color: red; /* Couleur de la bannière, à personnaliser */
+            color: white; /* Couleur du texte blanc, à personnaliser */
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        table {
+            display: none;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            text-align: left;
+            padding: 8px;
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+.pyramid-container {
+            position: relative;
+            width: 48px;
+            height: 48px;
+            margin-top: 20px;
+            animation: rotatePyramid 5s infinite linear;
+        }
+
+        .pyramid {
+            fill: #020507; /* Couleur de la pyramide, à personnaliser */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 24px solid transparent;
+            border-right: 24px solid transparent;
+            border-bottom: 41.57px solid #020507;
+        }
+
+        @keyframes rotatePyramid {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        
+
+        .pyramid-container {
+            margin-top: 70px;
+        }
+    </style>
+ </head>
+ <body>
+
+    <!-- Bande rouge avec le titre en blanc -->
+    <div class="header">
+        <h1> LES BESOINS FONDAMENTAUX  </h1>
+    </div>
+
+    <!-- Bande verte avec les prénoms en blanc -->
+    <div class="names-bar">
+        <p>Mohamed, Amine, Adrian, Cristel, Jennifer, Anthony, Clement et Fanny</p>
+    </div>
+
+    <!-- Pyramide -->
+    <div class="pyramid-container">
+        <svg class="pyramid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+            <path d="M12 2L1 21h22L12 2zm-3.31 16h6.62L12 7.36 8.69 18z"/>
+        </svg>
+    </div>
+
+    <!-- Slide 1: Introduction -->
+    <div class="slide">
+        <h1>LES 14 BESOINS DE VIRGINIA HENDERSON  </h1>
+    </div>
+
+ <!-- TABLEAU 1 : Analyse des facteurs influençant la satisfaction des 14 besoins fondamentaux -->
+
+    <div class="table-container">
+        <div class="table-header" onclick="toggleTable('table1')">TABLEAU 1 : Analyse des facteurs influençant la satisfaction des 14 besoins fondamentaux</div>
+
+        <table border="1" id="table1">
+            <!-- En-tête du tableau -->
+            <thead>
+                <tr>
+                    <th>BESOINS </th>
+                    <th>DIMENSION PHYSIOLOGIQUE  .</th>
+                    <th>DIMENSION PSYCHOLOGIQUE  .</th>
+                    <th>DIMENSION SOCIOLOGIQUE  .</th>
+                    <th>DIMENSION CULTURELLE   .</th>
+                </tr>
+            </thead>
+            <!-- Corps du tableau -->
+            <tbody>
+                <!-- Lignes -->
+                <tr>
+                    <td> se vetir ou se devetir. Normes:</td>
+                    <td> se proteger du froid  </td>
+                    <td> estime de soi </td>
+                    <td> plaire aux autres  </td>
+                    <td> tenue correcte  </td>
+                </tr>
+                <tr>
+                    <td> s'habiller se deshabiller </td>
+                    <td> perte d'autonomie   </td>
+                    <td> confiance    </td>
+                    <td> s'integrer dans la societe  </td>
+                    <td> tenue religieuse   </td>
+                </tr>
+                <tr>
+                    <td> se coiffer  s'attacher les cheveux  </td>
+                    <td> handicap </td>
+                    <td> fierte   </td>
+                    <td> la mode  </td>
+                    <td> tenue traditionnelle   </td>
+                </tr>
+                <tr>
+                    <td> se chausser mettre des bas  </td>
+                    <td> thermoregulation   </td>
+                    <td> bien etre  </td>
+                    <td>  besoin d'appartenance </td>
+                    <td> .  </td>
+                </tr>
+                <tr>
+                    <td> bijoux </td>
+                    <td> handicap  </td>
+                    <td> ... </td>
+                    <td>  plaire aux autres, code vestimentaire professionel(uniforme )  </td>
+                    <td> .  </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TABLEAU 2 : Maintenir la temperature du corps dans les limites de la normale -->
+
+    <div class="table-container">
+        <div class="table-header" onclick="toggleTable('table2')">TABLEAU 2 : Maintenir la temperature du corps dans les limites de la normale</div>
+
+        <table border="1" id="table2">
+            <!-- En-tête du tableau -->
+            <thead>
+                <tr>
+                    <th>BESOINS </th>
+                    <th>DIMENSION PHYSIOLOGIQUE  .</th>
+                    <th>DIMENSION PSYCHOLOGIQUE  .</th>
+                    <th>DIMENSION SOCIOLOGIQUE  .</th>
+                    <th>DIMENSION CULTURELLE   .</th>
+                </tr>
+            </thead>
+            <!-- Corps du tableau -->
+            <tbody>
+                <!-- Lignes -->
+                <tr>
+                    <td> maintenir la temperature. Normes:   </td>
+                    <td> effort , massage , manger , boire  </td>
+                    <td> peur </td>
+                    <td> activite sportive  </td>
+                    <td> meditation   </td>
+                </tr>
+                <tr>
+                    <td> vetement , chauffage , clim , isolation   </td>
+                    <td> maladie de Raynaud, vaisseaux sanguin   </td>
+                    <td> bouffees delirantes </td>
+                    <td> .  </td>
+                    <td> BAIN CHAUD ET BAIN FROID    </td>
+                </tr>
+                <tr>
+                    <td> pigmentation de la peau   </td>
+                    <td> frisson, transpiration, cycle hormonaux  </td>
+                    <td> peur de la mort   </td>
+                    <td> . </td>
+                    <td> . </td>
+                </tr>
+                <tr>
+                    <td> couverture de survie   </td>
+                    <td> mauvaise circulation du sang et lymphatique  </td>
+                    <td> rester alitée emotion </td>
+                    <td> . </td>
+                    <td> . </td>
+                </tr>
+                <tr>
+                    <td> Couverture chauffante     </td>
+                    <td> engelures , acupunctur, sommeil  </td>
+                    <td> manque de motivation   </td>
+                    <td> . </td>
+                    <td> . </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TABLEAU 3 : Eviter les dangers -->
+
+    <div class="table-container">
+        <div class="table-header" onclick="toggleTable('table3')">TABLEAU 3 : Eviter les dangers</div>
+
+        <table border="1" id="table3">
+            <!-- En-tête du tableau -->
+            <thead>
+                <tr>
+                    <th>BESOINS </th>
+                    <th>DIMENSION PHYSIOLOGIQUE  .</th>
+                    <th>DIMENSION PSYCHOLOGIQUE  .</th>
+                    <th>DIMENSION SOCIOLOGIQUE  .</th>
+                    <th>DIMENSION CULTURELLE   .</th>
+                </tr>
+            </thead>
+            <!-- Corps du tableau -->
+            <tbody>
+                <!-- Lignes -->
+                <tr>
+                    <td> eviter les dangers. Normes:  </td>
+                    <td> etre en bonne forme    </td>
+                    <td> peur </td>
+                    <td> emprise de certaines personnes   </td>
+                    <td> respect des reglementations religieuses   </td>
+                </tr>
+                <tr>
+                    <td>   etre attentif , observateur </td>
+                    <td>   bonne vue, l'age  </td>
+                    <td>   stresse   </td>
+                    <td>   l'ecoute  </td>
+                    <td>   objet religieux  </td>
+                </tr>
+                <tr>
+                    <td>   reflechir, analyser les situations  </td>
+                    <td>   bonne ouie, conduite addictive  </td>
+                    <td>   phobie   </td>
+                    <td>   respect de la loi  </td>
+                    <td>   . </td>
+                </tr>
+                <tr>
+                    <td>   prevention  </td>
+                    <td>   homeostasie, systeme immunitaire  </td>
+                    <td>   maladie mentale( psychoses)</td>
+                    <td>   sport de combat </td>
+                    <td>   .  </td>
+                </tr>
+                <tr>
+                    <td>   anticiper   </td>
+                    <td>   sport de combat </td>
+                    <td>   trouble du comportement  </td>
+                    <td>   . </td>
+                    <td>   .  </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </style>
+ </head>
+ <body>
+
+    <!-- Votre contenu actuel... -->
+
+    <!-- CONCLUSION -->
+    
+
+    <h2> TABLEAUX DES BESOINS DU 12/01/24    </h2>
+   
+
+    
+    <!-- Votre script JavaScript actuel... -->
+    <script>
+        function toggleTable(tableId) {
+            var table = document.getElementById(tableId);
+            table.style.display = (table.style.display === 'none' || table.style.display === '') ? 'table' : 'none';
+        }
+    </script>
+ </body>
+</html>
